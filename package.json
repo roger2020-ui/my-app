@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@mantine/core": "^6.0.5",
+    "@mantine/form": "^6.0.5",
+    "@mantine/hooks": "^6.0.5",
     "@mui/material": "^5.11.15",
     "@mui/styled-engine-sc": "^5.11.11",
     "@testing-library/jest-dom": "^5.16.5",
