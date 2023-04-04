@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React, { useState } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'
 import '../styles/navbar.css'
@@ -6,12 +6,15 @@ import img from '../img/dost.png'
 import { Button } from 'react-bootstrap'
 import Login from '../modals/LoginModal'
 const Navbar = () => {
-    const [showModal, setShowModal] = useState(false)
-    const handleClose = () => setShowModal(false)
-    const handleShow = () => setShowModal(true)
+  const [showModal, setShowModal] = useState(false)
+  const handleClose = () => setShowModal(false)
+  const handleShow = () => setShowModal(true)
   return (
     <div>
-      <nav className='navbar navbar-expand-lg navbar-light' id='navBar'>
+      <nav
+        className='navbar navbar-expand-lg navbar-light bg-light'
+        id='navBar'
+      >
         <img src={img} alt='' srcset='' />
         <div className='container-fluid '>
           <button
