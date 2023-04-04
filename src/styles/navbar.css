@@ -1,6 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 * {
+    font-family: 'Montserrat', sans-serif;
   font-size: large;
 }
+.container-fluid{
+    margin-left: 50px;
+}
 a {
-  margin: 20px;
+  margin: 10px;
 }
