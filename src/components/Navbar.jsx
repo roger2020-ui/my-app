@@ -54,7 +54,12 @@ const Navbar = () => {
               </li>
             </ul>
             <div class='wrapper'>
-              <Button variant='primary' onClick={handleShow}>
+              {/* LOGIN MODAL BUTTON */}
+              <Button
+                variant='primary'
+                data-bs-target='#staticBackdrop'
+                onClick={handleShow}
+              >
                 Login
               </Button>
               <Login showModal={showModal} handleClose={handleClose} />
