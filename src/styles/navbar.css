@@ -5,7 +5,12 @@
 }
 .container-fluid{
     margin-left: 5px;
+    display: flex;
+    justify-content: flex-end;
 }
 a {
   margin: 10px;
 }
+ nav img{
+    height: 100px;
+ }

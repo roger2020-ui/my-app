@@ -2,10 +2,12 @@ import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'
 import '../styles/navbar.css'
+import img from '../img/dost.png'
 const Navbar = () => {
   return (
     <div>
       <nav className='navbar navbar-expand-lg navbar-light bg-light'>
+        <img src={img} alt="" srcset="" />
         <div className='container-fluid '>
           <button
             class='navbar-toggler'
