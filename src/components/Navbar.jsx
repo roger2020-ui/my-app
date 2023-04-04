@@ -11,7 +11,7 @@ const Navbar = () => {
     const handleShow = () => setShowModal(true)
   return (
     <div>
-      <nav className='navbar navbar-expand-lg navbar-light bg-light'>
+      <nav className='navbar navbar-expand-lg navbar-light' id='navBar'>
         <img src={img} alt='' srcset='' />
         <div className='container-fluid '>
           <button
