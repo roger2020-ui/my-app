@@ -48,6 +48,11 @@ const Navbar = () => {
                 </a>
               </li>
             </ul>
+            <div class='wrapper'>
+              <button class='btn btn-success' id='login'>
+                Login
+              </button>
+            </div>
           </div>
         </div>
       </nav>

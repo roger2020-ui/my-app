@@ -15,3 +15,13 @@ a {
   padding-left: 20px;
     height: 80px;
  }
+ .wrapper{
+  align-text:center;  
+  padding-right: 30px;
+ }
+
+ #login{
+  display: flex;
+  justify-content: right;
+  text-align: center;
+ }
