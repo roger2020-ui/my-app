@@ -27,17 +27,17 @@ const Navbar = () => {
               </li>
               <li class='nav-item'>
                 <a class='nav-link active' aria-current='page' href='#./'>
-                  Home
+                  Dashboard
                 </a>
               </li>
               <li class='nav-item'>
                 <a class='nav-link active' aria-current='page' href='#./'>
-                  Home
+                  Files
                 </a>
               </li>
               <li class='nav-item'>
                 <a class='nav-link active' aria-current='page' href='#./'>
-                  Home
+                  About Us
                 </a>
               </li>
             </ul>

@@ -1,3 +1,6 @@
+*{
+    font-size: large;
+}
 .container-fluid{
     margin:10px;
 }
