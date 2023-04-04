@@ -9,8 +9,9 @@
     justify-content: flex-end;
 }
 a {
-  margin: 10px;
+  margin: 5px;
 }
  nav img{
-    height: 100px;
+  padding-left: 20px;
+    height: 80px;
  }
