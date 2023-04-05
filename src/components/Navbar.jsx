@@ -6,9 +6,11 @@ import img from '../img/dost.png'
 import { Button } from 'react-bootstrap'
 import Login from '../modals/LoginModal'
 const Navbar = () => {
+  // BUTTON FUNCTIONS
   const [showModal, setShowModal] = useState(false)
   const handleClose = () => setShowModal(false)
   const handleShow = () => setShowModal(true)
+  // BUTTON FUNCTIONS
   return (
     <div>
       <nav
@@ -61,6 +63,7 @@ const Navbar = () => {
                 Login
               </Button>
               <Login showModal={showModal} handleClose={handleClose} />
+              {/* LOGIN MODAL BUTTON */}
             </div>
           </div>
         </div>

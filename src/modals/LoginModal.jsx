@@ -2,7 +2,6 @@ import React from 'react'
 import { Button, Modal, Form } from 'react-bootstrap'
 import '../styles/loginModal.css'
 const LoginModal = ({ showModal, handleClose }) => {
-
   return (
     <Modal
       show={showModal}
@@ -13,13 +12,12 @@ const LoginModal = ({ showModal, handleClose }) => {
         <Modal.Title>LOGIN FORM</Modal.Title>
       </Modal.Header>
       <Modal.Body id='modalbody'>
-        <Form>
-          <Form.Group controlId='formBasicEmail'>
+        <Form id='form'>
+          <Form.Group id='email' controlId='formBasicEmail'>
             <Form.Control type='email' placeholder='Enter email' required />
           </Form.Group>
 
-          <Form.Group controlId='formBasicPassword'>
-            <Form.Label>Password</Form.Label>
+          <Form.Group id='password' controlId='formBasicPassword'>
             <Form.Control type='password' placeholder='Password' required />
           </Form.Group>
 

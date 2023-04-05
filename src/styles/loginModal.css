@@ -10,3 +10,12 @@ svg {
 #modalbody{
   padding: 0px;
 }
+#form{
+  margin:10px;
+}
+#email{
+  padding:10px;
+}
+#password{
+  padding:10px;
+}
