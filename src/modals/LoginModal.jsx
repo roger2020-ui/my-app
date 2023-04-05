@@ -12,10 +12,9 @@ const LoginModal = ({ showModal, handleClose }) => {
       <Modal.Header closeButton>
         <Modal.Title>LOGIN FORM</Modal.Title>
       </Modal.Header>
-      <Modal.Body>
+      <Modal.Body id='modalbody'>
         <Form>
           <Form.Group controlId='formBasicEmail'>
-            <Form.Label></Form.Label>
             <Form.Control type='email' placeholder='Enter email' required />
           </Form.Group>
 
