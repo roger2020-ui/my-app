@@ -3,9 +3,7 @@
     font-family: 'Montserrat', sans-serif;
   font-size: large;
 }
-nav#navBar{
-    /* background-color: aqua; */
-}
+
 .container-fluid{
     margin-left: 5px;
     display: flex;
