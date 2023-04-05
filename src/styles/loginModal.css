@@ -7,15 +7,27 @@ svg {
   height: auto;
   margin: 0px;
 }
-#modalbody{
+#modalbody {
   padding: 0px;
 }
-#form{
-  margin:10px;
+#form {
+  display: block;
+  margin: 10px;
 }
-#email{
-  padding:10px;
+#email {
+  padding: 10px;
 }
-#password{
-  padding:10px;
+#password {
+  padding: 10px;
+  margin-bottom: 0px;
+}
+#btn-form {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#login {
+  width: 40%;
+  justify-content: center;
 }

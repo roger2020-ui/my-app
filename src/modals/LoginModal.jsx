@@ -9,7 +9,7 @@ const LoginModal = ({ showModal, handleClose }) => {
       className='modal-dialog modal-dialog-centered'
     >
       <Modal.Header closeButton>
-        <Modal.Title>LOGIN FORM</Modal.Title>
+        <Modal.Title>LOGIN MODAL</Modal.Title>
       </Modal.Header>
       <Modal.Body id='modalbody'>
         <Form id='form'>
@@ -20,20 +20,21 @@ const LoginModal = ({ showModal, handleClose }) => {
           <Form.Group id='password' controlId='formBasicPassword'>
             <Form.Control type='password' placeholder='Password' required />
           </Form.Group>
-
-          <Button variant='primary' type='submit'>
-            Login
-          </Button>
+          <Form.Group id='btn-form'>
+            <Button id='login' variant='primary' type='submit'>
+              Login
+            </Button>
+          </Form.Group>
         </Form>
       </Modal.Body>
-      <Modal.Footer>
+      {/* <Modal.Footer>
         <Button variant='secondary' onClick={handleClose}>
           Close
         </Button>
         <Button variant='primary' onClick={handleClose}>
           Save Changes
         </Button>
-      </Modal.Footer>
+      </Modal.Footer> */}
     </Modal>
   )
 }
