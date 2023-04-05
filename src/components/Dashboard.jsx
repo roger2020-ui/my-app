@@ -1,8 +1,10 @@
 import React from 'react'
+import Sidebar from './Sidebar'
 const Home = () => {
   return (
-    <div>
-    </div>
+    <>
+    <Sidebar/>
+    </>
   )
 }
 export default Home
