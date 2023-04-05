@@ -1,15 +1,8 @@
-import React,{useEffect, useState} from 'react'
+import React from 'react'
 import { Button, Modal, Form } from 'react-bootstrap'
 import '../styles/loginModal.css'
-import svgImage from '../svg/person_black_48dp.svg'
-import { ReactSVG } from 'react-svg'
 const LoginModal = ({ showModal, handleClose }) => {
-    const [svgContent, setSvgContent] = useState('');
-    useEffect(()=>{
-        fetch(svgImage)
-        .then(response=>response.text())
-        .then(data=>setSvgContent(data));
-    },[])
+
   return (
     <Modal
       show={showModal}
@@ -19,7 +12,6 @@ const LoginModal = ({ showModal, handleClose }) => {
       <Modal.Header closeButton>
         <Modal.Title>LOGIN FORM</Modal.Title>
       </Modal.Header>
-      <ReactSVG className='svg' src={svgImage}/>
       <Modal.Body>
         <Form>
           <Form.Group controlId='formBasicEmail'>
