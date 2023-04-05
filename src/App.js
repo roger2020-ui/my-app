@@ -1,11 +1,11 @@
 import './App.css';
 import Navbar from './components/Navbar'
-import Home from './components/Home'
+import Dashboard from '/components/Dashboard/Dashboard'
 function App() {
   return (
     <>
-      <Navbar />
-      {/* <Home/> */}
+      {/* <Navbar /> */}
+      <Dashboard />
     </>
   )
 }
