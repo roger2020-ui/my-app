@@ -1,7 +1,7 @@
 import React from 'react'
 import { Button, Modal, Form } from 'react-bootstrap'
 import '../styles/loginModal.css'
-const LoginModal = ({ showModal, handleClose }) => {
+const Login = ({ showModal, handleClose }) => {
   return (
     <Modal
       show={showModal}
@@ -39,4 +39,4 @@ const LoginModal = ({ showModal, handleClose }) => {
   )
 }
 
-export default LoginModal
+export default Login
