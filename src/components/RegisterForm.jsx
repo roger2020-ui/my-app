@@ -4,16 +4,21 @@ import styled from 'styled-components'
 const RegisterForm = () => {
   const StyledContainer = styled.div`
     border-style: solid;
-    width: 500px;
+    width: 450px;
     height: 500px;
     border-radius: 24px;
-    /* padding: 20px; */
-    align-items:center;
+    padding: 20px;
+    align-items: center;
+  `
+  const StyledForm = styled.div`
+  margin: 5px;
   `
   return (
     <StyledContainer>
-        <TextField sx={{ padding: '10px' }} label='Email Address' />
-        <TextField sx={{ padding: '10px' }} label='Password' />
+      <StyledForm>
+        <TextField sx={{ paddingRight: '5px' }} label='Email Address' />
+        <TextField  label='Password' />
+      </StyledForm>
     </StyledContainer>
   )
 }
