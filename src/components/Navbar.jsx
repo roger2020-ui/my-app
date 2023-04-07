@@ -5,7 +5,7 @@ import { Container,Nav,Navbar } from 'react-bootstrap'
 const NavBar = () => {
   return (
     <div>
-      
+      asdasd
     </div>
   )
 }
