@@ -1,20 +1,18 @@
 import React from 'react'
-import { ListGroup } from 'react-bootstrap'
+import { Container, Row, Col } from 'react-bootstrap'
 const Sidebar = () => {
   return (
     <div>
-      <ListGroup variant='flush'>
-        <ListGroup.Item>Item 1</ListGroup.Item>
-        <ListGroup.Item>Item 2</ListGroup.Item>
-        <ListGroup.Item>
-          Item 3
-          <ul className='list-unstyled ml-3'>
-            <li>Subitem 1</li>
-            <li>Subitem 2</li>
-            <li>Subitem 3</li>
-          </ul>
-        </ListGroup.Item>
-      </ListGroup>
+      <Container>
+        <Row>
+          <Col xs={3}>
+            <p>Sidebar content goes here</p>
+          </Col>
+          <Col xs={9}>
+            <p>Main content goes here</p>
+          </Col>
+        </Row>
+      </Container>
     </div>
   )
 }

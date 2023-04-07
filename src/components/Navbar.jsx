@@ -1,75 +1,22 @@
 import React, { useState } from 'react'
-import 'bootstrap/dist/css/bootstrap.min.css'
-import 'bootstrap/dist/js/bootstrap.bundle.min.js'
 import '../styles/navbar.css'
 import img from '../img/dost.png'
-import { Button } from 'react-bootstrap'
-import Login from '../modals/LoginModal'
-const Navbar = () => {
-  // BUTTON FUNCTIONS
-  const [showModal, setShowModal] = useState(false)
-  const handleClose = () => setShowModal(false)
-  const handleShow = () => setShowModal(true)
-  // BUTTON FUNCTIONS
+import { Container,Nav,Navbar } from 'react-bootstrap'
+const NavBar = () => {
   return (
     <div>
-      <nav
-        className='navbar navbar-expand-lg navbar-light bg-light'
-        id='navBar'
-      >
-        <img src={img} alt='' srcset='' />
-        <div className='container-fluid '>
-          <button
-            class='navbar-toggler'
-            type='button'
-            data-bs-toggle='collapse'
-            data-bs-target='#navbarSupportedContent'
-            aria-controls='navbarSupportedContent'
-            aria-expanded='false'
-            aria-label='Toggle navigation'
-          >
-            <span class='navbar-toggler-icon'></span>
-          </button>
-          <div class='collapse navbar-collapse' id='navbarSupportedContent'>
-            <ul class='navbar-nav me-auto mb-2 mb-lg-0'>
-              <li class='nav-item'>
-                <a class='nav-link active' aria-current='page' href='#./'>
-                  Dashboard
-                </a>
-              </li>
-              <li class='nav-item'>
-                <a class='nav-link active' aria-current='page' href='#./'>
-                  Files
-                </a>
-              </li>
-              <li class='nav-item'>
-                <a class='nav-link active' aria-current='page' href='#./'>
-                  Contact Us
-                </a>
-              </li>
-              <li class='nav-item'>
-                <a class='nav-link active' aria-current='page' href='#./'>
-                  About Us
-                </a>
-              </li>
-            </ul>
-            <div class='wrapper'>
-              {/* LOGIN MODAL BUTTON */}
-              <Button
-                variant='primary'
-                data-bs-target='#staticBackdrop'
-                onClick={handleShow}
-              >
-                Login
-              </Button>
-              <Login showModal={showModal} handleClose={handleClose} />
-              {/* LOGIN MODAL BUTTON */}
-            </div>
-          </div>
-        </div>
-      </nav>
+      <Navbar bg='primary' variant='dark' >
+        <Container >
+          <Navbar.Brand href='#home'>Navbar</Navbar.Brand>
+          <Nav className='me-auto'>
+            <Nav.Link href='#home'>Home</Nav.Link>
+            <Nav.Link href='#features'>Features</Nav.Link>
+            <Nav.Link href='#pricing'>Pricing</Nav.Link>
+          </Nav>
+        </Container>
+      </Navbar>
     </div>
   )
 }
 
-export default Navbar
+export default NavBar
