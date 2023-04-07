@@ -1,11 +1,10 @@
 import React from 'react'
-import { Button, Modal, Form } from 'react-bootstrap'
 import '../styles/loginModal.css'
-const Login = ({ showModal, handleClose }) => {
+const Login = () => {
   return (
-  <>
-  {/* LOGIN MODAL */}
-  </>
+    <div>
+      
+    </div>
   )
 }
 
